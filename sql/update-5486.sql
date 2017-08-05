@@ -183,10 +183,10 @@ CREATE TABLE IF NOT EXISTS `cmstop_member_api` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
 INSERT INTO `cmstop_api` (`name`, `interface`, `description`, `icon`, `authorize`, `islogin`, `isshare`, `state`, `sort`) VALUES
-('新浪微博', 'sina', '', 'http://img.cmstop.loc/templates/default/img/sina.gif', '{"client_id":"","client_secret":""}', 1, 0, 1, 1);
+('新浪微博', 'sina', '', 'http://img.kuaipu.cmstop.pub/templates/default/img/sina.gif', '{"client_id":"","client_secret":""}', 1, 0, 1, 1);
 
 INSERT INTO `cmstop_api` (`name`, `interface`, `description`, `icon`, `authorize`, `islogin`, `isshare`, `state`, `sort`) VALUES
-('QQ互联', 'qq', '', 'http://img.cmstop.loc/templates/default/img/qzone.gif', '{"client_id":"","client_secret":""}', 1, 0, 1, 2);
+('QQ互联', 'qq', '', 'http://img.kuaipu.cmstop.pub/templates/default/img/qzone.gif', '{"client_id":"","client_secret":""}', 1, 0, 1, 2);
 
 INSERT INTO `cmstop_app` (`app`, `name`, `description`, `url`, `version`, `author`, `author_url`, `author_email`, `install_time`, `update_time`, `disabled`) VALUES ('cloud', '云平台', '云平台', '', '', 'CmsTop', 'http://www.cmstop.com/', 'webmaster@cmstop.com', 1274811314, 1274811314, 0);
 
@@ -200,7 +200,7 @@ INSERT INTO `cmstop_menu` (`menuid`, `parentid`, `parentids`, `childids`, `name`
 (41, 8, '8', NULL, '百度新闻源', '?app=system&controller=baidunews', NULL, 15);
 UPDATE `cmstop_menu` SET `childids` = REPLACE(`childids`, ',40,', ',40,41,') WHERE `menuid` = 8;
 INSERT INTO `cmstop_setting` (`app`, `var`, `value`) VALUES
-('system', 'baidunews', 'array (\n  ''open'' => ''1'',\n  ''url'' => ''{PSN:1}/xml/baidunews.xml'',\n  ''category'' => \n  array (\n    0 => ''1'',\n    1 => ''2'',\n    2 => ''3'',\n    3 => ''4'',\n    4 => ''5'',\n    5 => ''6'',\n  ),\n  ''article'' => ''1'',\n  ''picture'' => ''1'',\n  ''number'' => ''100'',\n  ''frequency'' => ''10'',\n  ''webname'' => ''http://www.cmstop.loc/'',\n  ''adminemail'' => ''admin@cmstop.com'',\n  ''updatetime'' => ''10'',\n)');
+('system', 'baidunews', 'array (\n  ''open'' => ''1'',\n  ''url'' => ''{PSN:1}/xml/baidunews.xml'',\n  ''category'' => \n  array (\n    0 => ''1'',\n    1 => ''2'',\n    2 => ''3'',\n    3 => ''4'',\n    4 => ''5'',\n    5 => ''6'',\n  ),\n  ''article'' => ''1'',\n  ''picture'' => ''1'',\n  ''number'' => ''100'',\n  ''frequency'' => ''10'',\n  ''webname'' => ''http://www.kuaipu.cmstop.pub/'',\n  ''adminemail'' => ''admin@cmstop.com'',\n  ''updatetime'' => ''10'',\n)');
 
 -- 增加视频专辑功能
 CREATE TABLE IF NOT EXISTS `cmstop_videolist` (

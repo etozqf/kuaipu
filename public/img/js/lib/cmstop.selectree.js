@@ -475,7 +475,7 @@
 		}).keyup(function( e ){
 			toggle_input_default($(this),cls['inputfocus'],e.type);
 		}).autocomplete({
-			url : self.settings.url + '?app=system&controller=category&action=search&keyword=%s', //http://admin.cmstop.loc/?app=system&controller=category&action=search&keyword=s
+			url : self.settings.url + '?app=system&controller=category&action=search&keyword=%s', //http://admin.kuaipu.cmstop.pub/?app=system&controller=category&action=search&keyword=s
 			CLASSES: {
 				autocomplete:'autocomplete-box autocomplete-result'
 			},

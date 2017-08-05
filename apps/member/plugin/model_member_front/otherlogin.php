@@ -282,7 +282,7 @@ class member_bind extends model
 		$post_fields='syn='.$m.'&syn_id='.$v['bindid'].'&syn_name='.$v['username'].
 						'&syn_uid='.$v['userid'].'&syn_oauth_token='.$v['access_token'].
 						'&syn_oauth_token_secret='.$v['token_secret'];
-		$url = 'http://t.cmstop.loc/index.php?m=account.ctsyn';
+		$url = 'http://t.kuaipu.cmstop.pub/index.php?m=account.ctsyn';
 
 		request($url, $post_fields);
 	}

@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `cmstop_member_api` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
 INSERT INTO `cmstop_api` (`name`, `interface`, `description`, `icon`, `authorize`, `islogin`, `isshare`, `state`, `sort`) VALUES
-('新浪微博', 'sina', '', 'http://img.cmstop.loc/templates/default/img/sina.gif', '{"client_id":"","client_secret":""}', 1, 0, 1, 1);
+('新浪微博', 'sina', '', 'http://img.kuaipu.cmstop.pub/templates/default/img/sina.gif', '{"client_id":"","client_secret":""}', 1, 0, 1, 1);
 
 INSERT INTO `cmstop_api` (`name`, `interface`, `description`, `icon`, `authorize`, `islogin`, `isshare`, `state`, `sort`) VALUES
-('QQ互联', 'qq', '', 'http://img.cmstop.loc/templates/default/img/qzone.gif', '{"client_id":"","client_secret":""}', 1, 0, 1, 2);
+('QQ互联', 'qq', '', 'http://img.kuaipu.cmstop.pub/templates/default/img/qzone.gif', '{"client_id":"","client_secret":""}', 1, 0, 1, 2);

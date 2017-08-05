@@ -38,7 +38,7 @@
         body{margin:0;padding:0;padding:40px 0 0 0;font-size:17px;position: relative;min-height: 520px;box-sizing: border-box;}
         h2{margin:0;margin-bottom:15px;padding:0;line-height:1;}
         .outer{position: absolute;left: 50%;margin-left: -130px;}
-        .icon{background-image:url('http://m.cmstop.loc/templates/cmstopv4/touch/imgs/downloadqq.png');overflow:hidden;}
+        .icon{background-image:url('http://m.kuaipu.cmstop.pub/templates/cmstopv4/touch/imgs/downloadqq.png');overflow:hidden;}
         .step{vertical-align:top;position:relative;top:12px;font-size:17px;}
         .f .step{margin-right:20px;}
         .s{overflow:hidden;margin-top:15px;height:121px;line-height:121px;}

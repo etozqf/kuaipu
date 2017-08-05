@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>页面未找到_Dev-CmsTop</title>
-    <link rel="stylesheet" type="text/css" href="http://img.cmstop.loc/templates/cmstopv4/css/cmstop.error.css" media="all">
+    <link rel="stylesheet" type="text/css" href="http://img.kuaipu.cmstop.pub/templates/cmstopv4/css/cmstop.error.css" media="all">
 </head>
 <body class="body-bg">
 <div class="main">
-    <a class="button" href="http://www.cmstop.loc/">点击返回首页</a>
+    <a class="button" href="http://www.kuaipu.cmstop.pub/">点击返回首页</a>
 </div>
 </body>
 </html>

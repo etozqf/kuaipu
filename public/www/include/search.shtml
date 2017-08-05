@@ -1,5 +1,5 @@
 <div class="fl-l header-search-input ov hidden">
-	<form id="head_search" name="head_search" action="http://app.cmstop.loc/" method="GET">
+	<form id="head_search" name="head_search" action="http://app.kuaipu.cmstop.pub/" method="GET">
 		<input type="hidden" name="app" value="search">
 		<input type="hidden" name="controller" value="index">
 		<input type="hidden" name="action" value="search">

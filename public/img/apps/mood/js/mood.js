@@ -49,7 +49,7 @@ $('#'+i+'_bar').css({"height": json.data[i].height+'%'});
 }
 var votedhtml = '<style>\
 .mood_bar {position:relative; width:34px; height:100px;background:#EEF7F7;}\
-.mood_bar_in {background:url(http://img.cmstop.loc/apps/mood/images/moodrank.gif) repeat-y;bottom:0;left:0;position:absolute;width:34px;}\
+.mood_bar_in {background:url(http://img.kuaipu.cmstop.pub/apps/mood/images/moodrank.gif) repeat-y;bottom:0;left:0;position:absolute;width:34px;}\
 </style>\
 <div class="titles layout">\
 <h3 style="text-align:left;"><span class="f_r" style="width: 80px;"><a target="_blank" href="/mood/">查看心情排行</a></span>\

@@ -58,16 +58,16 @@ INSERT INTO `cmstop_aca` (`acaid`, `parentid`, `app`, `controller`, `action`, `n
 (190, 178, 'page', 'section', 'add,delete,property', '设置');
 
 INSERT INTO `cmstop_page` (`pageid`, `parentid`, `parentids`, `childids`, `name`, `template`, `path`, `url`, `frequency`, `published`, `nextpublish`, `updated`, `updatedby`, `created`, `createdby`, `sort`) VALUES
-(1, NULL, NULL, NULL, '首页', 'index.html', '{PSN:1}index.shtml', 'http://www.cmstop.loc/index.shtml', 300, 1290483937, 1290484237, NULL, NULL, 1268731277, 1, 0),
-(2, NULL, NULL, NULL, '新闻', 'page/news.html', '{PSN:2}index.shtml', 'http://news.cmstop.loc/index.shtml', 600, 1290154455, 1290155055, NULL, NULL, 1268731633, 1, 0),
-(3, NULL, NULL, NULL, '访谈', 'page/talk.html', '{PSN:6}index.shtml', 'http://talk.cmstop.loc/index.shtml', 600, 1290154460, 1290155060, NULL, NULL, 1268731954, 1, 0),
-(4, NULL, NULL, NULL, '图片', 'page/photo.html', '{PSN:7}index.shtml', 'http://photo.cmstop.loc/index.shtml', 600, 1290154462, 1290155062, NULL, NULL, 1268765396, 1, 0),
-(5, NULL, NULL, NULL, '视频', 'page/video.html', '{PSN:8}index.shtml', 'http://video.cmstop.loc/index.shtml', 600, 1290154463, 1290155063, NULL, NULL, 1268767893, 1, 0),
-(6, NULL, NULL, NULL, '专题', 'page/special.html', '{PSN:5}index.shtml', 'http://special.cmstop.loc/index.shtml', 600, 1290154466, 1290155066, NULL, NULL, 1268768478, 1, 0),
-(7, NULL, NULL, NULL, '内容页推荐', 'system/right.html', '{PSN:1}include/right.shtml', 'http://www.cmstop.loc/include/right.shtml', 3600, 1290154467, 1290158067, NULL, NULL, 1268880342, 1, 0),
-(8, NULL, NULL, NULL, '广告', 'system/ad.html', '{PSN:1}/ad.shtml', 'http://www.cmstop.loc/ad.shtml', 3600, 1290154469, 1290158069, NULL, NULL, 1288162116, 1, 0),
-(14, NULL, NULL, NULL, '关于', 'system/ad.html', '{PSN:1}/about/join.shtml', 'http://www.cmstop.loc/about/join.shtml', 3600, 1290134954, 1290138554, NULL, NULL, 1288579383, 1, 0),
-(15, NULL, NULL, NULL, '专栏', 'page/space.html', '{PSN:1}/space/index.shtml', 'http://www.cmstop.loc/space/index.shtml', 3600, 1290154472, 1290158072, NULL, NULL, 1288685699, 1, 0);
+(1, NULL, NULL, NULL, '首页', 'index.html', '{PSN:1}index.shtml', 'http://www.kuaipu.cmstop.pub/index.shtml', 300, 1290483937, 1290484237, NULL, NULL, 1268731277, 1, 0),
+(2, NULL, NULL, NULL, '新闻', 'page/news.html', '{PSN:2}index.shtml', 'http://news.kuaipu.cmstop.pub/index.shtml', 600, 1290154455, 1290155055, NULL, NULL, 1268731633, 1, 0),
+(3, NULL, NULL, NULL, '访谈', 'page/talk.html', '{PSN:6}index.shtml', 'http://talk.kuaipu.cmstop.pub/index.shtml', 600, 1290154460, 1290155060, NULL, NULL, 1268731954, 1, 0),
+(4, NULL, NULL, NULL, '图片', 'page/photo.html', '{PSN:7}index.shtml', 'http://photo.kuaipu.cmstop.pub/index.shtml', 600, 1290154462, 1290155062, NULL, NULL, 1268765396, 1, 0),
+(5, NULL, NULL, NULL, '视频', 'page/video.html', '{PSN:8}index.shtml', 'http://video.kuaipu.cmstop.pub/index.shtml', 600, 1290154463, 1290155063, NULL, NULL, 1268767893, 1, 0),
+(6, NULL, NULL, NULL, '专题', 'page/special.html', '{PSN:5}index.shtml', 'http://special.kuaipu.cmstop.pub/index.shtml', 600, 1290154466, 1290155066, NULL, NULL, 1268768478, 1, 0),
+(7, NULL, NULL, NULL, '内容页推荐', 'system/right.html', '{PSN:1}include/right.shtml', 'http://www.kuaipu.cmstop.pub/include/right.shtml', 3600, 1290154467, 1290158067, NULL, NULL, 1268880342, 1, 0),
+(8, NULL, NULL, NULL, '广告', 'system/ad.html', '{PSN:1}/ad.shtml', 'http://www.kuaipu.cmstop.pub/ad.shtml', 3600, 1290154469, 1290158069, NULL, NULL, 1288162116, 1, 0),
+(14, NULL, NULL, NULL, '关于', 'system/ad.html', '{PSN:1}/about/join.shtml', 'http://www.kuaipu.cmstop.pub/about/join.shtml', 3600, 1290134954, 1290138554, NULL, NULL, 1288579383, 1, 0),
+(15, NULL, NULL, NULL, '专栏', 'page/space.html', '{PSN:1}/space/index.shtml', 'http://www.kuaipu.cmstop.pub/space/index.shtml', 3600, 1290154472, 1290158072, NULL, NULL, 1288685699, 1, 0);
 
 
 ALTER TABLE `cmstop_page`

@@ -1,6 +1,6 @@
 (function($){
 var TEMPLATE = '<dt><span class="user-info">{location}网友 {nickname}</span><span class="post-time">{date}</span></dt><dd><p>{content}</p></dd>';
-//var REPLY_FORM = '<div class="comment-item-reply"><form class="reply-form" method="post" action="http://app.cmstop.loc/?app=comment&controller=comment&action=reply"><input type="hidden" value="{topicid}" name="topicid" /><input type="hidden" value="{commentid}" name="followid" /><textarea value="" class="comment-reply-input" name="content" /></textarea><p><input type="submit" value="回复" /></p></form></div>';
+//var REPLY_FORM = '<div class="comment-item-reply"><form class="reply-form" method="post" action="http://app.kuaipu.cmstop.pub/?app=comment&controller=comment&action=reply"><input type="hidden" value="{topicid}" name="topicid" /><input type="hidden" value="{commentid}" name="followid" /><textarea value="" class="comment-reply-input" name="content" /></textarea><p><input type="submit" value="回复" /></p></form></div>';
 var REPLY_FORM = '<div class="comment-item-reply"><textarea class="reply-content"></textarea><a href="javascript:void(0)" class="reply-submit">回复</a></div>';
 var DEFAULT_NAME = window.defaultname || '思拓网友';
 var comment = function(container){

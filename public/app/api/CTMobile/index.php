@@ -1,5 +1,5 @@
 <?php
-define('UPLOAD_URL', 'http://upload.cmstop.loc/');
+define('UPLOAD_URL', 'http://upload.kuaipu.cmstop.pub/');
 
 require_once 'ctmobile.php';
 

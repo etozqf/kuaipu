@@ -185,16 +185,16 @@ CREATE TABLE `cmstop_mobile_app` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=100;
 
 INSERT INTO `cmstop_mobile_app` (`appid`, `name`, `iconurl`, `url`, `disabled`, `builtin`, `system`, `menu`, `sort`) VALUES
-(1, '新闻', 'http://m.cmstop.loc/templates/default/app/images/app_xw_btn@2x.png', 'app:news', 0, 1, 1, 1, 1),
-(2, '图片', 'http://m.cmstop.loc/templates/default/app/images/app_tps_btn@2x.png', 'app:picture', 0, 1, 0, 1, 2),
-(3, '视频', 'http://m.cmstop.loc/templates/default/app/images/app_sp_btn@2x.png', 'app:video', 0, 1, 0, 1, 3),
-(4, '专题', 'http://m.cmstop.loc/templates/default/app/images/app_zt_btn@2x.png', 'app:special', 0, 1, 0, 0, 4),
-(5, '微博', 'http://m.cmstop.loc/templates/default/app/images/app_wb_btn@2x.png', 'app:weibo', 0, 1, 0, 1, 5),
-(6, '报料', 'http://m.cmstop.loc/templates/default/app/images/app_bl_btn@2x.png', 'app:baoliao', 1, 1, 0, 0, 6),
-(7, '二维码', 'http://m.cmstop.loc/templates/default/app/images/app_ewm_btn@2x.png', 'app:qrcode', 0, 1, 0, 0, 7),
-(8, '投票', 'http://m.cmstop.loc/templates/default/app/images/app_tp_btn@2x.png', 'app:vote', 0, 1, 0, 0, 8),
-(9, '活动', 'http://m.cmstop.loc/templates/default/app/images/app_hd_btn@2x.png', 'app:activity', 0, 1, 0, 0, 9),
-(10, '调查', 'http://m.cmstop.loc/templates/default/app/images/app_dc_btn@2x.png', 'app:survey', 0, 1, 0, 0, 10);
+(1, '新闻', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/app_xw_btn@2x.png', 'app:news', 0, 1, 1, 1, 1),
+(2, '图片', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/app_tps_btn@2x.png', 'app:picture', 0, 1, 0, 1, 2),
+(3, '视频', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/app_sp_btn@2x.png', 'app:video', 0, 1, 0, 1, 3),
+(4, '专题', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/app_zt_btn@2x.png', 'app:special', 0, 1, 0, 0, 4),
+(5, '微博', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/app_wb_btn@2x.png', 'app:weibo', 0, 1, 0, 1, 5),
+(6, '报料', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/app_bl_btn@2x.png', 'app:baoliao', 1, 1, 0, 0, 6),
+(7, '二维码', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/app_ewm_btn@2x.png', 'app:qrcode', 0, 1, 0, 0, 7),
+(8, '投票', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/app_tp_btn@2x.png', 'app:vote', 0, 1, 0, 0, 8),
+(9, '活动', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/app_hd_btn@2x.png', 'app:activity', 0, 1, 0, 0, 9),
+(10, '调查', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/app_dc_btn@2x.png', 'app:survey', 0, 1, 0, 0, 10);
 
 DROP TABLE IF EXISTS `cmstop_mobile_article`;
 CREATE TABLE `cmstop_mobile_article` (
@@ -221,16 +221,16 @@ CREATE TABLE `cmstop_mobile_category` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 INSERT INTO `cmstop_mobile_category` (`catid`, `catname`, `iconurl`, `headline`, `display_slider`, `slider_size`, `default_display`, `disabled`, `sort`, `sorttime`) VALUES
-(1, '新闻头条', 'http://m.cmstop.loc/templates/default/app/images/category/headline.png', 1, 1, 3, 1, 0, 1, 1364981105),
-(2, '国际', 'http://m.cmstop.loc/templates/default/app/images/category/guoji.png', 0, 1, 3, 1, 0, 2, 1364481636),
-(3, '科技', 'http://m.cmstop.loc/templates/default/app/images/category/tech.png', 0, 1, 3, 1, 0, 3, 1364981105),
-(4, '军事', 'http://m.cmstop.loc/templates/default/app/images/category/mil.png', 0, 1, 3, 1, 0, 4, 1364867768),
-(5, '娱乐', 'http://m.cmstop.loc/templates/default/app/images/category/ent.png', 0, 1, 3, 1, 0, 5, 1364469707),
-(6, '体育', 'http://m.cmstop.loc/templates/default/app/images/category/sport.png', 0, 1, 3, 1, 0, 6, 1364277483),
-(7, '汽车', 'http://m.cmstop.loc/templates/default/app/images/category/car.png', 0, 1, 3, 1, 0, 7, 1364971637),
-(8, '房产', 'http://m.cmstop.loc/templates/default/app/images/category/house.png', 0, 1, 3, 1, 0, 8, 1364192996),
-(9, '财经', 'http://m.cmstop.loc/templates/default/app/images/category/finance.png', 0, 1, 3, 1, 0, 9, 1364481636),
-(10, '游戏', 'http://m.cmstop.loc/templates/default/app/images/category/game.png', 0, 1, 3, 1, 0, 10, 1364192053);
+(1, '新闻头条', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/category/headline.png', 1, 1, 3, 1, 0, 1, 1364981105),
+(2, '国际', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/category/guoji.png', 0, 1, 3, 1, 0, 2, 1364481636),
+(3, '科技', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/category/tech.png', 0, 1, 3, 1, 0, 3, 1364981105),
+(4, '军事', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/category/mil.png', 0, 1, 3, 1, 0, 4, 1364867768),
+(5, '娱乐', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/category/ent.png', 0, 1, 3, 1, 0, 5, 1364469707),
+(6, '体育', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/category/sport.png', 0, 1, 3, 1, 0, 6, 1364277483),
+(7, '汽车', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/category/car.png', 0, 1, 3, 1, 0, 7, 1364971637),
+(8, '房产', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/category/house.png', 0, 1, 3, 1, 0, 8, 1364192996),
+(9, '财经', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/category/finance.png', 0, 1, 3, 1, 0, 9, 1364481636),
+(10, '游戏', 'http://m.kuaipu.cmstop.pub/templates/default/app/images/category/game.png', 0, 1, 3, 1, 0, 10, 1364192053);
 
 DROP TABLE IF EXISTS `cmstop_mobile_category_bind`;
 CREATE TABLE `cmstop_mobile_category_bind` (
@@ -543,7 +543,7 @@ INSERT INTO `cmstop_setting` (`app`, `var`, `value`) VALUES
 ('mobile', 'android_version_url', ''),
 ('mobile', 'api', 'array ()'),
 ('mobile', 'baoliao', 'array (\n  ''islogin'' => ''1'',\n  ''max_picsize'' => ''10'',\n  ''max_videosize'' => ''100'',\n)'),
-('mobile', 'bootstrap', 'array (\n  ''logo'' => \n  array (\n    ''320*480'' => ''http://m.cmstop.loc/templates/default/app/images/boot/320x480.png'',\n    ''480*800'' => ''http://m.cmstop.loc/templates/default/app/images/boot/480x800.png'',\n    ''640*960'' => ''http://m.cmstop.loc/templates/default/app/images/boot/640x960.png'',\n    ''640*1136'' => ''http://m.cmstop.loc/templates/default/app/images/boot/640x1136.png'',\n  ),\n)'),
+('mobile', 'bootstrap', 'array (\n  ''logo'' => \n  array (\n    ''320*480'' => ''http://m.kuaipu.cmstop.pub/templates/default/app/images/boot/320x480.png'',\n    ''480*800'' => ''http://m.kuaipu.cmstop.pub/templates/default/app/images/boot/480x800.png'',\n    ''640*960'' => ''http://m.kuaipu.cmstop.pub/templates/default/app/images/boot/640x960.png'',\n    ''640*1136'' => ''http://m.kuaipu.cmstop.pub/templates/default/app/images/boot/640x1136.png'',\n  ),\n)'),
 ('mobile', 'category_version', '1'),
 ('mobile', 'comment', 'array (\n  ''open'' => ''1'',\n  ''islogin'' => ''1'',\n)'),
 ('mobile', 'content_description_length', '100'),
@@ -597,12 +597,12 @@ CREATE TABLE `cmstop_comment_source` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 ALTER TABLE `cmstop_comment` ADD `sourceid` SMALLINT UNSIGNED NULL DEFAULT NULL AFTER `topicid`;
 ALTER TABLE `cmstop_comment` ADD `sourceinfo` VARCHAR( 300 ) NULL DEFAULT NULL ;
-INSERT INTO `cmstop_comment_source` (`sourceid`, `identity`, `name`, `url`, `ico`, `params`, `state`) VALUES ('1', 'tencent_weibo', '腾讯微博', 'http://t.qq.com/', 'http://img.cmstop.loc/images/tencent.png', '[{"id":"verify_token","name":"腾讯微博令牌","value":""}]', 0);
+INSERT INTO `cmstop_comment_source` (`sourceid`, `identity`, `name`, `url`, `ico`, `params`, `state`) VALUES ('1', 'tencent_weibo', '腾讯微博', 'http://t.qq.com/', 'http://img.kuaipu.cmstop.pub/images/tencent.png', '[{"id":"verify_token","name":"腾讯微博令牌","value":""}]', 0);
 
 -- API表增加字段记录灰色图标
 ALTER TABLE `cmstop_api` ADD `icon_gray` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' AFTER `icon`;
-UPDATE `cmstop_api` SET `icon_gray`='http://img.cmstop.loc/templates/default/img/qq_g.png' WHERE `interface`='tencent' LIMIT 1;
-UPDATE `cmstop_api` SET `icon_gray`='http://img.cmstop.loc/templates/default/img/sina_g.gif' WHERE `interface`='sina' LIMIT 1;
+UPDATE `cmstop_api` SET `icon_gray`='http://img.kuaipu.cmstop.pub/templates/default/img/qq_g.png' WHERE `interface`='tencent' LIMIT 1;
+UPDATE `cmstop_api` SET `icon_gray`='http://img.kuaipu.cmstop.pub/templates/default/img/sina_g.gif' WHERE `interface`='sina' LIMIT 1;
 
 -- 微博字段名称变更
 ALTER TABLE `cmstop_weibo` CHANGE `type` `type` ENUM( 'sina_weibo', 'tencent_weibo' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ;

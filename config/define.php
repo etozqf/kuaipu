@@ -4,16 +4,16 @@ ini_set('display_errors', 0);	// 是否开启错误日志显示
 define('XHPROF_DEBUG', 0);
 define('LOG_ERROR', TRUE);      // 是否记录致命错误
 
-define('DOMAIN', 'cmstop.loc');
-define('ADMIN_URL', 'http://admin.cmstop.loc/');   //后台网址
-define('APP_URL', 'http://app.cmstop.loc/');       //动态访问网址
-define('IMG_URL', 'http://img.cmstop.loc/');       //公共图片、JS、CSS网址
-define('UPLOAD_URL', 'http://upload.cmstop.loc/'); //附件网址
-define('WWW_URL', 'http://www.cmstop.loc/');       //静态网页网址
-define('WAP_URL', 'http://wap.cmstop.loc/');       //WAP网址
-define('SPACE_URL', 'http://space.cmstop.loc/');       //专栏网址
-define('API_URL', 'http://api.cmstop.loc/');       //接口网址
-define('MOBILE_URL', 'http://m.cmstop.loc/');      //移动网址
+define('DOMAIN', 'kuaipu.cmstop.pub');
+define('ADMIN_URL', 'http://admin.kuaipu.cmstop.pub/');   //后台网址
+define('APP_URL', 'http://app.kuaipu.cmstop.pub/');       //动态访问网址
+define('IMG_URL', 'http://img.kuaipu.cmstop.pub/');       //公共图片、JS、CSS网址
+define('UPLOAD_URL', 'http://upload.kuaipu.cmstop.pub/'); //附件网址
+define('WWW_URL', 'http://www.kuaipu.cmstop.pub/');       //静态网页网址
+define('WAP_URL', 'http://wap.kuaipu.cmstop.pub/');       //WAP网址
+define('SPACE_URL', 'http://space.kuaipu.cmstop.pub/');       //专栏网址
+define('API_URL', 'http://api.kuaipu.cmstop.pub/');       //接口网址
+define('MOBILE_URL', 'http://m.kuaipu.cmstop.pub/');      //移动网址
 define('MOBILE_PROTOCOL', 'cmstop');                //移动端注册的协议
 
 define('FW_PATH', ROOT_PATH.'framework'.DS);

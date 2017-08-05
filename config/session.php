@@ -4,7 +4,7 @@ return array (
     'maxlifetime' => 1800,
     'cache_limiter' => 'private_no_expire',
     'cache_expire' => '15',
-    'cookie_domain' => '.cmstop.loc',
+    'cookie_domain' => '.kuaipu.cmstop.pub',
     'cookie_path' => '/',
     'cookie_lifetime' => '0',
     'db_issame' => 1,

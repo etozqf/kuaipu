@@ -13,9 +13,9 @@
 /// 你的站名称，不以 网字结尾  ,　不要超过　10个汉字，20　个字母
 define('XAUTH_SITE_NAME',			'CmsTop微博演示站');
 /// 你的网站登录地址 如下所示，如果你的网站能根据参数判断，并在登录后跳回　Xweibo　用户体验将会更好 
-define('XAUTH_SITE_LOGIN_URL',		'http://app.cmstop.loc/?app=member&controller=index&action=login');
+define('XAUTH_SITE_LOGIN_URL',		'http://app.kuaipu.cmstop.pub/?app=member&controller=index&action=login');
 /// 你的网站注册地址 Xweibo　会自动添加　XAUTH_SITE_CALLBACK_NAME　参数，
-define('XAUTH_SITE_REG_URL',		'http://app.cmstop.loc/?app=member&controller=index&action=register');
+define('XAUTH_SITE_REG_URL',		'http://app.kuaipu.cmstop.pub/?app=member&controller=index&action=register');
 /// XWEIBO跳转到你的登录或者注册URL的时候会自动添加名称如下的参数，其值为XWEIBO广场首页地址
 define('XAUTH_SITE_CALLBACK_NAME',	'referer');
 // ----------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ define('XAUTH_CK_DATA_NAME',	'_xauthTK');
 define('XAUTH_CK_SIGN_NAME',	'_xauthSG');
 
 /// 存储　TOKEN 的 COOKIE 有效域，null 为当前域 
-define('XAUTH_CK_DOMAIN',	'.cmstop.loc');
+define('XAUTH_CK_DOMAIN',	'.kuaipu.cmstop.pub');
 /// 存储　TOKEN 的 COOKIE 有效路径
 define('XAUTH_CK_PATH',		'/');
 /// 存储　TOKEN 的 COOKIE 有周期，如：APP_LOCAL_TIMESTAMP+3600*30 , 0为浏览器周期
