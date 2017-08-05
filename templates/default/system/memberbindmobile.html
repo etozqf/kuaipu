@@ -1,0 +1,143 @@
+<!-- 手机绑定框 -->
+<div class="singup-box singup-in-dialog hidden login-dialog-bind">
+    <div class="singup-panel">
+        <div class="">
+            <div class="m-title-a">
+                <h2 class="m-title-h2"><a>绑定手机</a></h2>
+            </div>
+            <div class="hr20"></div>
+            <!-- 登录内容 -->
+            <div class="singup-form ov">
+                <div class="singup-w330" style="width: 580px">
+                    <form onsubmit="return false;" id="member_loginForm" method="post" action="{APP_URL}?app=member&amp;controller=index&amp;action=ajaxlogin">
+                        <input id="state" type="hidden" class="input-text js-focus username" name="state" value="true" />
+                        <div class="hr20"></div>
+                        <div class="">
+                            <label class="label singup-w70 fl-l margin-r-20">手机号码</label>
+                            <div class="singup-line singup-item singup-w280 fl-l">
+                                <input id="reg_mobile_num" type="text" class="input-text js-focus username" name="mobile" />
+                            </div>
+                            <div class="fl-r singup-relative-mobileB20">
+                                <input type="button" id="mobile_send" value="发送验证码" disable="disable" class="fl-r submit disable button1 margin-r-60" />
+                            </div>
+                        </div>
+                        <div class="hr40 singup-clear-mobile"></div>
+                        <div class="ov" >
+                            <label class="label singup-w70 fl-l margin-r-20">验 证 码</label>
+                            <div class="singup-line singup-item singup-w430 fl-l">
+                                <input id="reg_mobile_code" type="text" class="input-text js-focus username" name="reg_mobile_code" />
+                            </div>
+                        </div>
+                        <div class="hr30"></div>
+                        <div class="ov margin-l-70">
+                            <input type="submit" value="绑定并登录" class="fl-l submit button1 margin-r-20" />
+                            <div class="hr40"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    var mobile = $('#member_loginForm input[name=mobile]');
+    var reg_mobile_code = $('#member_loginForm input[name=reg_mobile_code]');
+    $('form').submit(function(){
+        if (!mobile.val())
+        {
+            mobile.parent().addClass('border-red').append('<p class="pos-a warn">手机号不能为空</p>');
+            return false;
+        }
+        if (!reg_mobile_code.val())
+        {
+            reg_mobile_code.parent().addClass('border-red').append('<p class="pos-a warn">验证码不能为空</p>');
+            return false;
+        }
+
+        var params = [];
+        params.push('mobile=' + encodeURIComponent(mobile.val()));
+        params.push('reg_mobile_code=' + encodeURIComponent(reg_mobile_code.val()));
+        params.push('state=' + encodeURIComponent('true'));
+
+        $.getJSON(APP_URL+'?app=member&controller=index&action=ajaxbindmobile&' + params.join('&') + '&jsoncallback=?', function(json) {
+            if (json && json.state) {
+                $('form').parents('.ui-dialog-grid').find('[i="close"]').trigger('click');
+                if ($('.interview-comment').length > 0) {
+                    $('.interview-comment .login').hide();
+                    $('.interview-comment .loginstatus').show();
+                } else {
+                    if (json.message && json.message.indexOf('<script') > -1) {
+                        var src;
+                        if (src = /<script[^>]+src="([^"]*)"/.exec(json.message)[1]) {
+                            $.getScript(src);
+                        }
+                    } else {
+                        loginForm.update();
+                    }
+                }
+            } else {
+                alert(json && json.error || '登录失败，请重新尝试');
+                $('#needseccode').show();
+                $('form').find('[name=password]').val('');
+                $('form').find('[name=seccode]').val('验证码');
+            }
+        }, 'jsonp');
+
+    });
+
+    $('#member_loginForm input').blur(function(){
+        if ($(this).attr('name') == 'mobile' && !$(this).val()) {
+            $(this).parent().addClass('border-red').append('<p class="pos-a warn">手机号不能为空</p>');
+            $('#mobile_send').addClass('disable').attr('disable', 'disable');
+            return false;
+        }
+        if ($(this).attr('name') == 'reg_mobile_code' && !$(this).val()) {
+            $(this).parent().addClass('border-red').append('<p class="pos-a warn">验证码不能为空</p>');
+            return false;
+        }
+        $('#mobile_send').removeClass('disable').css('cursor','pointer').attr('disable', '');
+    });
+    $('#member_loginForm input').focus(function(){
+        $(this).parent().removeClass('border-red').find('p').remove();
+    });
+
+    var getRequest = true; // 是否请求验证码
+    $('#mobile_send').click(function(){
+        if ($(this).attr('disable') == 'disable' && !getRequest) {
+            return false;
+        }
+        var mobileNum = $('#reg_mobile_num').val();
+        if (!mobileNum) {
+            $('#reg_mobile_num').parent().addClass('border-red').append('<p class="pos-a warn">手机号码不能为空</p>');
+            return false;
+        }
+        /*
+         if(!(/^1[34578]\d{9}$/.test(mobileNum))) {
+         $(this).parent().addClass('border-red').append('<p class="pos-a warn">请输入正确的手机号码</p>');
+         return false;
+         }*/
+
+        if (getRequest) {
+            $.getJSON(APP_URL + '?app=member&controller=index&action=sendmessage&mobile=' + parseInt($('#reg_mobile_num').val()) + '&jsoncallback=?', function(json){
+                if (json.state) {
+                    var waitTime = 60;
+                    var timer = setInterval(function(){
+                        $('#mobile_send').addClass('disable').attr('disable', 'disable');
+
+                        $('#mobile_send').val(--waitTime +'重新获取');
+                        if (waitTime == 0) {
+                            clearInterval(timer);
+                            $('#mobile_send').removeClass('disable').css('cursor','pointer').attr('disable', '').val('重新获取');
+                            getRequest = true;
+                        }
+                    }, 1000);
+                    getRequest = false;
+                    alert(json.message);
+                } else {
+                    alert(json.error);
+                }
+            })
+        }
+    });
+</script>

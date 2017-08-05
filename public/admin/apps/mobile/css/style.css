@@ -1,0 +1,289 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 1128px;
+}
+dialog {
+	display: none;
+}
+.mobile-style-sider {
+	width: 142px;
+	height: 700px;
+	overflow-y: auto;
+	border-right: #9ac4dc 1px solid;
+	border-left: none;
+	margin-top: -1px;
+}
+.mobile-style-sider a {
+	display: block;
+	width: 128px;
+	height: 24px;
+	line-height: 24px;
+	margin: 7px auto;
+	text-indent: 24px;
+	color: #7a7a7a;
+	border: 1px #fff solid;
+}
+.mobile-style-sider a:hover {
+	border: 1px solid #99c4dd;
+	background-color: #f2f9fb
+}
+.mobile-style-sider .current {
+	color: red;
+}
+.mobile-style-sider .use {
+	background-image: url(images/style/use-ico.gif);
+	background-repeat: no-repeat;
+	background-position: 6px 4px;
+}
+.mobile-style-sider hr {
+	border: dashed #DDD 1px;
+	margin: 0 14px;
+}
+.mobile-style-sider-title {
+	width: 100%;
+	font-size: 14px;
+	font-weight: bold;
+	text-indent: 12px;
+	color: #008acc;
+	background-image: url(images/style/bg_x.gif);
+	height: 27px;
+	line-height: 27px;
+	border-bottom: #9ac4dc 1px solid;
+}
+.mobile-style-sider-list {
+    padding-left: 27px;
+    background-color: #F2F2F2;
+    height: 32px;
+    line-height: 32px;
+    font-size: 17px;
+    color:#5E5E5E;
+}
+.mobile-style-demo {
+	width: 370px;
+}
+.mobile-style-iphone {
+	position: relative;
+	width: 280px;
+	height: 480px;
+	background-image: url(images/style/iphone-bg.png);
+	margin: 12px 10px
+}
+#demo-nav {
+	width: 250px;
+	height: 42px;
+	position: absolute;
+	top: 29px;
+	left: 15px;
+}
+#demo-button0 {
+	width: 60px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 78px;
+	left: 246px;
+	color: #fff;
+}
+#demo-button1 {
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 475px;
+	left: 128px;
+}
+.mobile-style-demo-thumb {
+	width: 252px;
+	height: 359px;
+	position: absolute;
+	top: 71px;
+	left: 14px;
+	overflow: hidden;
+}
+#demo-background {
+	width: 294px;
+	height: 350px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.wechat-style-table tr {
+	height: 32px;
+	line-height: 32px;
+}
+.wechat-style-table th {
+	text-align: left;
+	font-size: 14px;
+	color: #888;
+}
+.wechat-style-table td img {
+	margin: 0; /* hacker admin.css */
+}
+.mobile-style-bg-panel {
+	width: 160px;
+	position: relative;
+	float: left;
+}
+.mobile-style-bg-title {
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+	color: #7a7a7a;
+}
+.mobile-style-bg-panel img {
+	width: 160px;
+    height: 240px;
+	cursor: pointer;
+}
+.mobile-style-bg-upload {
+	width: 100%;
+	height: 28px;
+	visibility: hidden;
+	position: absolute!important;
+	bottom: 0;
+	left: 0;
+	background: url(images/style/upload.gif) rgba(0, 0, 0, 0.5) center center no-repeat;
+	*background:  url(images/style/upload.gif) #000 center center no-repeat;
+	cursor: pointer;
+}
+.mobile-style-bg-panel:hover .mobile-style-bg-upload {
+	visibility: visible;
+}
+.mobile-style-setting {
+	*width: 584px;
+	*overflow-x: hidden;
+}
+div[class*=mobile-style-btn-] {
+	cursor: pointer;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin: 0 9px;
+}
+.mobile-style-btn-saveas {
+	width: 100px;
+	height: 40px;
+	background-image: url(images/style/btn-saveas.gif);	
+}
+.mobile-style-btn-save {
+	width: 60px;
+	height: 40px;
+	background-image: url(images/style/btn-save.gif);
+}
+.mobile-style-btn-use {
+	width: 80px;
+	height: 40px;
+	background-image: url(images/style/btn-use.gif);
+}
+.mobile-style-btn-delete {
+	width: 60px;
+	height: 40px;
+	background-image: url(images/style/btn-delete.gif);
+}
+.mobile-style-color .color-title {
+    color:#5E5E5E;
+    font-size: 18px;
+}
+.mobile-style-color div {
+    margin-bottom: 20px;
+}
+.mobile-style-color .color-content, .mobile-style-color .color-custom {
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #5E5E5E;
+}
+.mobile-style-color .color-content span,.mobile-style-color .color-custom span {
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 20px;
+    margin: 1px;
+    vertical-align: middle;
+    width: 30px;
+    margin-right: 20px;
+}
+.mobile-style-color .color-content .lightgreen{
+    background-color: #0a78cd;
+    border-color: #0a78cd;
+}
+.mobile-style-color .color-content .green{
+    background-color: #38aa2f;
+    border-color: #38aa2f;
+}
+.mobile-style-color .color-content .darkgreen{
+    background-color: #2fbcab;
+    border-color: #2fbcab;
+}
+.mobile-style-color .color-content .yellow{
+    background-color: #fabe00;
+    border-color: #fabe00;
+}
+.mobile-style-color .color-content .grey{
+    background-color: #ff4400;
+    border-color: #ff4400;
+}
+.mobile-style-color .color-content .black{
+    background-color: #303132;
+    border-color: #303132;
+}
+.mobile-style-color .color-content .red{
+    background-color: #c80505;
+    border-color: #c80505;
+}.mobile-style-color .color-content .violet{
+     background-color: #682878;
+     border-color: #682878;
+ }
+.mobile-style-color .color-content .pink{
+    background-color: #ff7373;
+    border-color: #ff7373;
+}
+.mobile-style-color .color-content .other{
+    background-color: #F2F2F2;
+    border-color: #F2F2F2;
+}
+.mobile-style-color .input-box{
+    border: 0;
+}
+.mobile-style-main {
+    position: relative;
+    top:20px;
+    left:50px;
+}
+.mobile-style-save {
+    background-color: #00cc66;
+    color:#fff;
+    width:120px;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+.mobile-style-setting {
+    position: relative;
+}
+.mobile-style-setting .background {
+    margin-left: 50px;
+}
+.mobile-style-setting .background .bgtitle {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+.mobile-style-setting .mobile-style-save {
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+}

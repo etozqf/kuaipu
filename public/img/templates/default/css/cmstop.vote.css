@@ -1,0 +1,404 @@
+/**
+ * V4模板投票样式
+ * 从模板中分离出, 并非原作
+ */
+.ov {
+    overflow: hidden;
+}
+.fl-l {
+    float: left;
+}
+.fl-r {
+    float: right;
+}
+.button1 {
+    background-color: #0091e4;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 7px 10px;
+}
+.pos-a {
+    position: absolute;
+}
+li, ol, ul {
+    list-style: outside none none;
+}
+.pos-r {
+    position: relative;
+}
+.hidden {
+    display:none;
+}
+/*投票页面*/
+.mod-vote .vote-detail-list .item {
+    border: 1px solid #ddd;
+    margin-right: 45px;
+    margin-bottom: 58px;
+}
+.mod-vote .vote-detail-list .item-right {
+    margin-right: 0px;
+}
+
+.ie6 .vote-detail-list ul {
+    padding-left: 3px;
+}
+.ie6 .vote-detail-list .item,.ie7 .vote-detail-list .item {
+    width: 206px;
+    margin-left: -3px;
+}
+
+.vote-detail-list .item-right {
+    margin-right: 0;
+}
+.vote-detail-list .image {
+    padding: 9px 9px 0px 10px;
+    text-align: center;
+}
+.vote-detail-list .img {
+    height: 135px;
+    text-align: center;
+    width: 185px;
+}
+.vote-detail-list .img img {
+    max-width: 185px;
+    max-height: 135px;
+}
+.vote-detail-list .image p {
+    font-size: 14px;
+    color: #444;
+    height: 33px;
+    line-height: 33px;
+    width:180px;
+    overflow: hidden;
+}
+.vote-detail-list .bottom {
+    background-color: #f5f5f5;
+    height: 41px;
+    border-top: 1px solid #ddd;
+}
+.vote-detail-list .bottom .nums {
+    font-size: 14px;
+    color: #777;
+    font-family: Arial;
+    padding-top: 13px;
+    padding-right: 10px;
+}
+.vote-detail-list .bottom label {
+    font-size: 14px;
+    padding-left: 10px;
+    display: block;
+    padding-top: 10px;
+    color: #444;
+}
+.vote-submit .button1[type=submit] {
+    width: 90px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+.vote-submit .button1.disable[type=submit] {
+    background-color: #bbbbbb;
+}
+.vote-submit .button1.disable[type=submit]:hover {
+    opacity: 1;
+    filter:Alpha(opacity=100);
+    cursor: default;
+}
+.vote-submit .button1:hover ,.vote-raido-list .bottom .check:hover{
+    opacity:0.9;
+    filter:Alpha(opacity=90);
+}
+.vote-submit .cancel {
+    font-size: 14px;
+    color: #777;
+    padding-top: 7px;
+    padding-left: 20px;
+}
+.vote-submit .reload {
+    margin-right: 20px;
+}
+/*单选*/
+.vote-raido-list .voted .bottom .check {
+    display:none;
+}
+.vote-raido-list .bottom .check {
+    width: 48px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0;
+    text-align: center;
+    left: 40%;
+    top: 10px;
+    cursor:pointer;
+}
+.vote-raido-list .bottom .check:hover {
+    color: #fff!important;
+}
+.vote-sigle-bottom {
+    background-color: #f5f5f5;
+    min-height: 82px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.vote-sigle-bottom .vote-submit .m-input-text {
+    margin-left: 10px;
+}
+.vote-sigle-bottom .vote-submit .button1[type=submit] {
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 10px;
+    padding: 0;
+    width: 50px;
+}
+.vote-sigle-bottom .vote-submit .cancel {
+    padding-top: 5px;
+    margin-top: -8px;
+}
+/*投票结果页*/
+.ie6 .survey-header .survey-shadow,
+.ie7 .survey-header .survey-shadow,
+.ie8 .survey-header .survey-shadow {
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+}
+/*验证码图片位置*/
+.longseccodeimg img {
+    margin-left: 11px;
+    margin-top: 8px;
+}
+.submit-bar {
+    margin-top: -6px;
+    line-height: 30px;
+    margin-bottom: 2px;
+}
+.submit-bar .explain {
+    font-size:14px;
+}
+.submit-bar .m-input-text {
+    margin-top:8px;
+    margin-right:5px;
+}
+.vote-detail-list .submit {
+    cursor:pointer;
+}
+.seccodeDiv {
+    position:absolute;
+    margin-left: 30px;
+    margin-top: -45px;
+}
+.vote-submit .button1[type="button"] {
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    width: 90px;
+    border: 0;
+}
+.vote-detail-list .item .bottom .disable {
+    background-color: #bbbbbb;
+    width: 48px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0;
+    text-align: center;
+    left: 40%;
+    top: 10px;
+    cursor:default;
+}
+
+
+.activity-list-item {
+    height: 280px;
+    font-size: 0;
+    margin-bottom: 40px;
+}
+.activity-list-item-left {
+    width: 660px;
+    height: 280px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.activity-list-item-right {
+    width: 339px;
+    height: 278px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eee;
+    border-left: none;
+    font-size: 13px;
+    color: #444;
+}
+.activity-list-item-left img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.activity-list-item-left .title {
+    width: 100%;
+    height: 40px;
+    line-height: 2;
+    text-indent: 20px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    font-size: 20px;
+    color: #fff;
+}
+.activity-list-item-right .time {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    font-size: 12px;
+}
+.activity-list-item-right .address {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+}
+.activity-list-item-right .condition {
+    position: absolute;
+    top: 148px;
+    left: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    line-height: 40px;
+    width: 300px;
+}
+.activity-list-item-right .view {
+    position: absolute;
+    top: 222px;
+    left: 20px;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #0091e4;
+    border-radius: 4px;
+}
+.activity-list-item-right .view:hover {
+    color:#fff !important;
+}
+.activity-list-item-right .status {
+    position: absolute;
+    top: 230px;
+    left: 130px;
+}
+.category-more {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: #f7f7f7;
+    text-align: center;
+    margin: 15px auto;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    color: #777;
+    display: block;
+}
+.joinform .field {
+    overflow: auto;
+    max-height:400px;
+}
+.joinform .submit-bar {
+    margin-left: 199px;
+}
+.gender {
+    margin-left: 3px;
+}
+.vote-seccode .longseccodeimg {
+    width: 210px;
+    height: 40px;
+}
+.vote-seccode .explain {
+    position: relative;
+    top: 8px;
+}
+.address {
+    height: 35px;
+}
+.vote-detail-list .optionvalue {
+    position: relative; 
+    top: -1px;
+}
+.vote-detail-list .vote-seccode {
+    width: 410px;
+}
+.vote-detail-list .color {
+    width: 28px;
+    height: 19px;
+}
+.vote-detail-list .explain {
+    margin: 8px 5px 0px;
+}
+.vote-detail-list .seccodeSpan {
+    height: 30px;
+    margin-top: 7px;
+    width:180px;
+}
+.vote-detail-list .seccodeImage {
+    margin-right: 0px;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+.submit-bar .m-input-text {
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
+    min-width: 50px;
+    width: 30px;
+}
+.m-input-text, .m-textarea {
+    border: 1px solid #bbb;
+    padding: 6px;
+}
+.vote-sigle-bottom .vote-submit .button1[type="submit"] {
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 10px;
+    padding: 0;
+    width: 50px;
+}
+.vote-submit .button1[type="submit"] {
+    cursor: pointer;
+    display: inline-block;
+}
+input[type="submit"] {
+    border: medium none;
+}
+.vote-sigle-bottom .vote-submit .cancel {
+    margin-top: -8px;
+    padding-top: 5px;
+}
+.vote-submit .cancel {
+    color: #777;
+    font-size: 14px;
+    padding-left: 20px;
+}
+.vote-sigle-bottom a {
+    text-decoration: none;
+}
+.vote-detail-list a { 
+    outline: none;
+} 
+.vote-detail-list a {
+    blr:expression(this.onFocus=this.blur());
+}
+.vote-detail-list .image a:link {color: #000; text-decoration: none;}
+.vote-detail-list .image a:visited {color: #000; text-decoration: none;}
+.vote-detail-list .image a:hover {color: #000; text-decoration: none;}
+.vote-detail-list .image a:active {color: #000; text-decoration: none;} 
+.vote-detail-list .voted .bottom .fl-r {
+    float: none;
+    text-align: center;
+    display: block;
+}
+.vote-detail-list .voted .bottom label {
+    display: none
+}

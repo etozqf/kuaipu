@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+	<depends>jquery</depends>
+    <resource>{IMG_URL}js/config.js</resource>
+    <resource>{IMG_URL}js/lib/jquery.cookie.js</resource>
+    <resource>{IMG_URL}js/lib/cmstop.seccode.js</resource>
+    <resource>{IMG_URL}templates/{TEMPLATE}/css/cmstop.vote.css</resource>
+</package>

@@ -1,0 +1,10 @@
+		<!-- 顶部条 -->
+		<div class="header-topbar">
+			<!-- 带分享的顶部 -->
+			<!--#include virtual="/include/search.shtml"-->
+			<!-- end带分享的顶部 -->
+			<!-- 带链接的顶部 -->
+			<!--#include virtual="/section/96.html"-->
+			<!-- end带链接的顶部 -->
+		</div>
+		<!-- end顶部条 -->

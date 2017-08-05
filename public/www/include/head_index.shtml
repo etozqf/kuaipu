@@ -1,0 +1,39 @@
+<!--#include virtual="/include/search.shtml"-->
+<a href="" target="_blank" class="m-header-rss fl-l icon16x16"></a>
+<div class="m-header-user fl-l">
+    <div class="hidden" id="logout_status">
+        <a href="" class="js-login">登录</a>
+        <em>|</em>
+        <a href="" class="head-register">注册</a>
+    </div>
+    <div class="hidden" id="login_status">
+        <a href="javascript:void(0);" class="js-userphoto"><img src="" width="22" height="22" alt=""></a>
+        <div class="hidden">
+            <ul class="usermenu">
+                <li><a class="my-contribute" target="_blank" href="">我的投稿</a></li>
+                <li><a class="my-member" target="_blank" href="">编辑资料</a></li>
+                <li><a href="" class="last head-logout">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('.m-header-rss').attr('href', APP_URL + 'rss.php');
+        $('.js-login').attr('href', APP_URL + '?app=member&controller=index&action=login');
+        $('.head-register').attr('href', APP_URL + '?app=member&controller=index&action=register');
+        $('.head-logout').attr('href', APP_URL + '?app=member&controller=index&action=logout');
+        $('.my-contribute').attr('href', APP_URL + '?app=contribution&controller=panel&action=index');
+        $('.my-member').attr('href', APP_URL + '?app=member&controller=panel&action=index');
+        if ($.cookie(COOKIE_PRE+'auth')) {
+            $('#login_status').removeClass('hidden');
+            var member_photo = $.cookie(COOKIE_PRE+'photo');
+            $('#login_status .js-userphoto img').attr('src', member_photo);
+        } else {
+            $('#logout_status').removeClass('hidden');
+        }
+        $('.js-login').click(function(){
+            window.location.href = APP_URL + '?app=member&controller=index&action=login';
+        });
+    });
+</script>

@@ -1,0 +1,17 @@
+<div class="fl-l header-search-input ov hidden">
+	<form id="head_search" name="head_search" action="http://app.cmstop.loc/" method="GET">
+		<input type="hidden" name="app" value="search">
+		<input type="hidden" name="controller" value="index">
+		<input type="hidden" name="action" value="search">
+		<input type="hidden" id="type" name="type" value="all">
+	    <div class="divicon icon16x16 fl-r"></div>
+	    <input type="text" id="head_wd" name="wd" class="searinput" />
+    </form>
+</div>
+<a href="" class="m-header-search js-headsearch fl-l icon16x16"></a>
+<script type="text/javascript">
+	$('#head_search .divicon').click(function(){
+		$('#head_search').submit();
+	});
+	$('#head_search').attr('action', APP_URL);
+</script>

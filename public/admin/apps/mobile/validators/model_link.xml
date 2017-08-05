@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root box="errorbox">
+    <title>
+        <required event="submit">请填写标题</required>
+    </title>
+    <linkto>
+        <required event="submit">请填写链接</required>
+    </linkto>
+    <thumb>
+
+    </thumb>
+    <thumb_slider>
+
+    </thumb_slider>
+</root>

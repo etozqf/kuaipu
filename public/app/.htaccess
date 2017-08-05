@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^qr/(.+)$ /?app=system&controller=qrcode&action=index&qrcode=$1 [L]
+RewriteRule ^r/(.+)$ /?app=system&controller=url&action=index&short=$1 [QSA,L]

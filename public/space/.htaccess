@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule ^list(\/?)$ /index.php?action=listing [L]
+RewriteRule ^([A-Za-z0-9]+)(\/?)$ /index.php?space=$1&action=homepage [L]
+RewriteRule ^([A-Za-z0-9]+)/feed(\/?)$ /index.php?space=$1&action=rss [L]

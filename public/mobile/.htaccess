@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^category/(\d+)$ /?controller=index&action=category&catid=$1 [L]
+RewriteRule ^(article|picture|link|video|activity|vote|survey|special|eventlive)/$ /?controller=$1&action=index [L]
+RewriteRule ^(article|picture|link|video|activity|vote|survey|special|eventlive)/(\d+)$ /?controller=$1&action=show&contentid=$2&$4 [QSA,L]
+RewriteRule ^(article|picture|link|video|activity|vote|survey|special|eventlive)/(\d+)/([a-z][a-z0-9_]*)$ /?controller=$1&action=$3&contentid=$2 [L]
+RewriteRule ^(article|picture|link|video|activity|vote|survey|special|eventlive)/([a-z][a-z0-9_]*)$ /?controller=$1&action=$2 [L]
+RewriteRule ^search/$ /?controller=search&action=search [QSA,L]
+RewriteRule ^comment/(\d+)$ /?controller=comment&action=show&topicid=$1 [L]
+RewriteRule ^comment/(add)$ /?controller=comment&action=$1 [L]
+RewriteRule ^member/(login)$ /?controller=member&action=$1 [L]
+RewriteRule ^qr/(\d+),(\d+)$ /?controller=qrcode&action=index&contentid=$1&modelid=$2 [L]
+
+RewriteRule ^pc(\w+)/(\d+)$ http://app.cmstop.trunk/?app=$1&controller=$1&action=show&contentid=$2 [P,L]
+RewriteRule ^pc(\w+)/(\d+)/lists$ http://app.cmstop.trunk/?app=$1&controller=$1&action=lists&contentid=$2 [P,L]
+
+RewriteRule ^pcvote/pcvote$ http://app.cmstop.trunk/?app=vote&controller=vote&action=pcvote [P,L]
+RewriteRule ^pcactivity/(\d+)/signup$ http://app.cmstop.trunk/?app=activity&controller=activity&action=signup&contentid=$1 [P,L]
+RewriteRule ^pcactivity/signup$ http://app.cmstop.trunk/?app=activity&controller=activity&action=signup [P,L]
+RewriteRule ^pcsurvey/pcanswer http://app.cmstop.trunk/?app=survey&controller=survey&action=pcanswer [P,L]
